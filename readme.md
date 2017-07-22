@@ -1,6 +1,6 @@
 Download `GoogleClouldStorageServiceProvider.php` file and put it under `app/providers` directory.
 
-##How to use this library
+## How to use this library
 You need to simply use below namespace to use it's functions.
 ```
 use App\Providers\GoogleCloudStorageServiceProvider;
