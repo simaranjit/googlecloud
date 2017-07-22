@@ -14,13 +14,9 @@ class GoogleCloudStorageServiceProvider extends ServiceProvider {
      * @param string $projectID
      */
     public function __construct($projectID) {
-        // Skip it
-        # Your Google Cloud Platform project ID
-        $projectId = 'deep-byte-172204';
-
         # Instantiates a client
         $this->storage = new StorageClient([
-            'projectId' => $projectId
+            'projectId' => $projectID
         ]);
     }
 
