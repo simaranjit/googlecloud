@@ -59,7 +59,11 @@ $googleCould->getFileInfo('bucket-name', 'file-name')
 $googleCould->getFileInfo('bucket-name', 'file-name')
 ```
 
+**Delete a file**
 
+```
+$googleCould->deleteFile('bucket-name', 'file-name')
+```
 
 
 
