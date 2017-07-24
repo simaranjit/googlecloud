@@ -176,4 +176,29 @@ class GoogleCloudStorageServiceProvider extends ServiceProvider {
         return $file->downloadAsString();
     }
 
+    /**
+     * Delete a file
+     *
+     * @param string $bucketName
+     * @param string $fileName
+     *
+     * @return bool
+     * @throws Exception
+     */
+    public function deleteFile($bucketName, $fileName) {
+        $bucket = $this->storage->bucket($bucketName);
+        if (!$bucket->exists()) {
+            throw new Exception('Bucket does not exist');
+        }
+
+        $file = $bucket->object($fileName);
+        if (!$file->exists()) {
+            throw new Exception('File does not exist');
+        }
+
+        $file->delete();
+
+        return true;
+    }
+
 }
