@@ -38,7 +38,7 @@ $googleCould->bucketExists('bucket-name')
 **Upload a file in a bucket**
 
 ```
-$googleCould->uploadFile('bucket-name', 'file-name', 'file-content')
+$googleCould->uploadFile('bucket-name', 'file-name', 'file-content');
 ```
 
 **Retrieve list of files in a bucket**
